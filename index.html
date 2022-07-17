@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Percentage Software</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <h1 class="heading">Percentage Calculator</h1>
+            <form onsubmit="percentage();  {return false;}">
+                <br>
+                <br>
+                <input type="number" required placeholder="English Numbers" maxlength="2"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    id="a">
+                <input type="number" required placeholder="Urdu Numbers" maxlength="2"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    id="b">
+                <br>
+                <br>
+                <input type="number" required placeholder="Math Numbers" maxlength="2"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    id="c">
+                <input type="number" required placeholder="Computer Numbers" maxlength="2"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    id="d">
+                <br>
+                <br>
+                <input type="number" required placeholder="Science Numbers" maxlength="2"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    id="e">
+                <input type="number" required placeholder="Physics Numbers" maxlength="2"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    id="f">
+                <br>
+                <br>
+                <input type="number" required placeholder="Biology Numbers" maxlength="2"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    id="g">
+                <input type="number" required placeholder="Sindhi Numbers" maxlength="2"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    id="h">
+                <br>
+                <br>
+                <input type="number" required placeholder="Zoology Numbers" maxlength="2"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    id="i">
+
+                <input type="number" required placeholder="Botany Numbers" maxlength="2"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    id="j">
+                <br>
+                <br>
+                <button value="submit" id="btn" onclick="grade(); {return false};">Calculate</button>
+            </form>
+        </div>
+        <div class="result">
+            <h1 class="heading">Result</h1>
+            <br>
+            <br>
+            <br>
+            <h2 class="heading" id="marks"></h2>
+            <br>
+            <h2 class="heading" id="addition"></h2>
+            <br>
+            <h2 class="heading" id="average"></h2>
+            <br>
+            <h2 class="heading" id="percentage"></h2>
+            <br>
+            <h2 class="heading" id="grade"></h2>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
