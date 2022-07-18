@@ -15,7 +15,7 @@ body {
 }
 
 #btn {
-    width: 400px;
+    width: 360px;
     height: 35px;
     border-radius: 20px;
     font-size: 20px;
@@ -101,18 +101,27 @@ body.result {
     }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 375px) {
     .container {
         width: 360px;
     }
 
-    form {
+    .result {
+        width: 360px;
 
-        text-align: center;
+    }
+    #btn{
+        width: 350px;
+
+    }
+}
+@media screen and (max-width: 411px) {
+    .container {
+        width: 400px;
     }
 
     .result {
-        width: 360px;
+        width: 400px;
 
     }
 }
