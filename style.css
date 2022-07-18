@@ -1,17 +1,17 @@
 body {
     background-color: lightblue;
-    
+
 }
 
 .container {
     text-align: center;
     width: 600px;
-    height: 650px;
+    height: 550px;
     display: inline-block;
     background-color: #ffffff;
     border-radius: 45px;
     border-bottom-right-radius: 0px;
-    border-top-right-radius: 0px; 
+    border-top-right-radius: 0px;
 }
 
 #btn {
@@ -30,12 +30,19 @@ body {
 
 }
 
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 form input {
     border: none;
     margin: 15px;
     padding: 13px;
     border-radius: 20px;
     font-family: monospace;
+    text-align: center;
 
 }
 
@@ -46,7 +53,7 @@ form input {
 .result {
     text-align: center;
     width: 600px;
-    height: 650px;
+    height: 550px;
     display: inline-block;
     background-color: #ffffff;
     border-radius: 45px;
@@ -62,4 +69,55 @@ body.result {
 .main {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 437px) {
+    .container {
+        text-align: center;
+        width: 600px;
+        height: 850px;
+        display: inline-block;
+        background-color: #ffffff;
+        border-radius: 45px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+}
+
+@media screen and (max-width: 1216px) {
+    .container {
+        border-radius: 45px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .result {
+        border-radius: 45px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .container {
+        width: 360px;
+    }
+
+    form {
+
+        text-align: center;
+    }
+
+    .result {
+        width: 360px;
+
+    }
+}
+
+@media screen and (max-width: 1216px) {
+    .result {
+        border: none;
+        border-top: 1px dashed black;
+    }
 }
