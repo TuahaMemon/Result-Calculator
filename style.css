@@ -85,7 +85,7 @@ body.result {
     }
 }
 
-@media screen and (max-width: 1216px) {
+@media screen and (max-width: 1215px) {
     .container {
         border-radius: 45px;
         border-bottom-right-radius: 0px;
