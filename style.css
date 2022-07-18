@@ -51,12 +51,12 @@ form input {
 }
 
 .result {
-    text-align: center;
     width: 600px;
     height: 550px;
     display: inline-block;
-    background-color: #ffffff;
+    text-align: center;
     border-radius: 45px;
+    background-color: #ffffff;
     border-bottom-left-radius: 0px;
     border-top-left-radius: 0px;
     border-left: 1px dashed black;
@@ -96,6 +96,7 @@ body.result {
         border-radius: 45px;
         border-top-right-radius: 0px;
         border-top-left-radius: 0px;
+        border-top: 1px dashed black;
     }
 }
 
@@ -115,9 +116,3 @@ body.result {
     }
 }
 
-@media screen and (max-width: 1216px) {
-    .result {
-        border: none;
-        border-top: 1px dashed black;
-    }
-}

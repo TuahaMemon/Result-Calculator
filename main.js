@@ -44,10 +44,10 @@ function percentage() {
                 `Your grade is A, Better!`;
         }else if (total >= 60) {
             document.querySelector("#grade").innerHTML =
-                `Your grade is B, Keep it up!`;
+                `Your grade is B, Good!`;
         }else if (total >= 50) {
             document.querySelector("#grade").innerHTML =
-                `Your grade is C, Good!`;
+                `Your grade is C, Keep it up!`;
         }else if (total >= 40) {
             document.querySelector("#grade").innerHTML =
                 `Your grade is D, Very bad!`;
